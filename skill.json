@@ -9,7 +9,7 @@
             "hello",
             "help"
           ],
-          "name": "skill-sample-nodejs-hello-world",
+          "name": "hotel-skill-interaction-model",
           "description": "Sample Full Description"
         },
         "ja-JP": {
@@ -19,7 +19,7 @@
             "hello",
             "help"
           ],
-          "name": "skill-sample-nodejs-hello-world",
+          "name": "hotel-skill-interaction-model",
           "description": "Sample Full Description"
         }
       },
