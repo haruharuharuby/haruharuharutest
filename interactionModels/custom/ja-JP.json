@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "食品試験",
+            "invocationName": "ティーエイチエル",
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
@@ -20,670 +20,78 @@
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.FallbackIntent",
+                    "name": "AMAZON.PauseIntent",
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.PreviousIntent",
+                    "name": "AMAZON.ResumeIntent",
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.NextIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.YesIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.NoIntent",
-                    "samples": []
-                },
-                {
-                    "name": "number_only",
+                    "name": "luggage_presend",
                     "slots": [
                         {
-                            "name": "number_value",
-                            "type": "AMAZON.NUMBER"
+                            "name": "luggage",
+                            "type": "LUGGAGE"
                         }
                     ],
                     "samples": [
-                        "{number_value}"
-                    ]
-                },
-                {
-                    "name": "things_to_do",
-                    "slots": [],
-                    "samples": [
-                        "やる事"
-                    ]
-                },
-                {
-                    "name": "intro_video",
-                    "slots": [],
-                    "samples": [
-                        "動画一覧",
-                        "ビデオリスト"
-                    ]
-                },
-                {
-                    "name": "recommend_list",
-                    "slots": [
-                        {
-                            "name": "recommend_thing",
-                            "type": "recommend_type"
-                        }
-                    ],
-                    "samples": [
-                        "{recommend_thing} を出して",
-                        "{recommend_thing} を見せて",
-                        "{recommend_thing}",
-                        "お勧め",
-                        "お勧め {recommend_thing}"
-                    ]
-                },
-                {
-                    "name": "what_is",
-                    "slots": [
-                        {
-                            "name": "facility",
-                            "type": "facility"
-                        },
-                        {
-                            "name": "facility_type",
-                            "type": "facility_type"
-                        }
-                    ],
-                    "samples": [
-                        "{facility} の {facility_type} は何ですか",
-                        "{facility} の {facility_type} を教えてください",
-                        "{facility} の温泉の {facility_type} を教えて",
-                        "{facility} について教えて",
-                        "{facility} について知りたい"
-                    ]
-                },
-                {
-                    "name": "how_many",
-                    "slots": [
-                        {
-                            "name": "facility",
-                            "type": "facility"
-                        }
-                    ],
-                    "samples": [
-                        "{facility} にお風呂はいくつありますか",
-                        "{facility} にお風呂は何個ありますか"
-                    ]
-                },
-                {
-                    "name": "do_you_have",
-                    "slots": [
-                        {
-                            "name": "facility",
-                            "type": "facility"
-                        },
-                        {
-                            "name": "facility_type",
-                            "type": "facility_type"
-                        },
-                        {
-                            "name": "facility_request",
-                            "type": "facility_request"
-                        },
-                        {
-                            "name": "service",
-                            "type": "service"
-                        },
-                        {
-                            "name": "facility_detail",
-                            "type": "facility_detail"
-                        },
-                        {
-                            "name": "service_request",
-                            "type": "service_request"
-                        }
-                    ],
-                    "samples": [
-                        "{facility_type} の {facility} ある",
-                        "{facility} が追加でほしい",
-                        "{facility} が追加でほしい 追加料金はあるか",
-                        "{facility} は何がありますか",
-                        "{facility} は 何が借りられますか",
-                        "{facility} は持って帰ってもいい",
-                        "{facility} が 借りられますか",
-                        "{facility} に {facility_type} はありますか",
-                        "{facility} に {facility_type} は用意してありますか",
-                        "{facility} を教えてください",
-                        "{facility} はありますか",
-                        "{facility} ある",
-                        "部屋に {facility} は付いてますか",
-                        "{facility_type}  {facility} はありますか",
-                        "{facility_type} の {facility} はありますか",
-                        "{facility} は借りれますか",
-                        "{facility} は部屋にありますか",
-                        "{facility} は使えますか",
-                        "{facility} を借りることはできますか",
-                        "{facility} は用意できますか",
-                        "{facility} を借りられますか",
-                        "{facility} はどうしたら借りられますか",
-                        "{facility} をかしてもらうことはできますか",
-                        "{facility_type} の {facility} を借りることはできますか",
-                        "{facility_type} が使える {facility} はありますか",
-                        "{facility} を {facility_request} できますか",
-                        "{facility} ありますか",
-                        "{service} はできますか",
-                        "{facility} を借りたい",
-                        "{facility} で {facility_type} はありますか",
-                        "{facility_type}  {facility} は見れますか",
-                        "{facility} で {facility_type} を視聴したいのですが",
-                        "{facility} 施設はありますか",
-                        "{facility} を使いたい",
-                        "{facility} の {facility_detail} 制限がありますか",
-                        "{facility} に {facility_detail} はありますか",
-                        "{service} の時間を {service_request} できますか",
-                        "部屋で {facility} は使えますか",
-                        "{facility} の一覧を見せて",
-                        "どんな {facility} がありますか",
-                        "{facility} のリストを見せて",
-                        "{facility} のリストを表示して",
-                        "ホテルで見れる {facility} の一覧を見せて"
-                    ]
-                },
-                {
-                    "name": "when_is",
-                    "slots": [
-                        {
-                            "name": "facility",
-                            "type": "facility"
-                        },
-                        {
-                            "name": "facility_type",
-                            "type": "facility_type"
-                        },
-                        {
-                            "name": "service",
-                            "type": "service"
-                        }
-                    ],
-                    "samples": [
-                        "{facility} の男女の {facility_type} はありますか",
-                        "{facility} に男女の {facility_type} はありますか",
-                        "{service} は何時ですか",
-                        "{service} はいつですか",
-                        "{service} は何時までですか",
-                        "{service} 時間を変えたい",
-                        "{service} の営業時間を教えてください",
-                        "{service} の営業時間は何時までですか",
-                        "{service} の時間を教えてください",
-                        "{facility} は何時からですか",
-                        "{facility} は何時ですか",
-                        "{facility} は何時開始ですか",
-                        "{service} の時間を教えて",
-                        "{service} の時間は何時",
-                        "{service} の時間教えて",
-                        "{facility} の時刻表教えて",
-                        "{facility} は何時に出ますか"
-                    ]
-                },
-                {
-                    "name": "when_reservation",
-                    "slots": [
-                        {
-                            "name": "reservation",
-                            "type": "reservation"
-                        }
-                    ],
-                    "samples": [
-                        "{reservation} を確認したいのですがどのようにできますか",
-                        "{reservation} を確認して"
-                    ]
-                },
-                {
-                    "name": "how_to",
-                    "slots": [
-                        {
-                            "name": "what",
-                            "type": "what"
-                        },
-                        {
-                            "name": "facility",
-                            "type": "facility"
-                        },
-                        {
-                            "name": "facility_function",
-                            "type": "facility_function"
-                        },
-                        {
-                            "name": "service",
-                            "type": "service"
-                        }
-                    ],
-                    "samples": [
-                        "{facility} のパスワードを教えて",
-                        "{what} 時はどうすればいいですか",
-                        "{what} が起こった時の対処はどうすればよいですか",
-                        "{what} の時はどうすればいいですか",
-                        "{what} の時の対処はどうすればよいですか",
-                        "{facility} の操作方法が知りたい",
-                        "{facility} の使い方を教えて",
-                        "{facility} の使い方教えて",
-                        "{facility} の使用方法を教えて",
-                        "{facility} を {facility_function} したいのですが",
-                        "{facility} のパスワードを教えてください",
-                        "{facility} は利用可能ですか",
-                        "部屋で {facility} は利用可能ですか",
-                        "{service} 教えて",
-                        "{service} のことを教えて",
-                        "{facility} パスワードは何",
-                        "{facility} パスワードを教えて"
-                    ]
-                },
-                {
-                    "name": "where_is",
-                    "slots": [
-                        {
-                            "name": "facility",
-                            "type": "facility"
-                        },
-                        {
-                            "name": "service",
-                            "type": "service"
-                        },
-                        {
-                            "name": "place",
-                            "type": "place"
-                        },
-                        {
-                            "name": "place_type",
-                            "type": "place_type"
-                        },
-                        {
-                            "name": "facility_type",
-                            "type": "facility_type"
-                        }
-                    ],
-                    "samples": [
-                        "{facility} はどこですか",
-                        "{facility} はどこ",
-                        "{service} の場所を教えてください",
-                        "{service} はどこですか",
-                        "{place} を教えて",
-                        "{place} はどこ",
-                        "{place_type} の {place} はどこですか",
-                        "最寄 {place} はどこですか",
-                        "{facility} はどこにありますか",
-                        "{facility} の {facility_type} 教えて",
-                        "{facility} の {facility_type} どこ",
-                        "一番 {place_type}  {place} はどこ",
-                        "{facility} は何階",
-                        "{facility} は何階にある"
-                    ]
-                },
-                {
-                    "name": "call",
-                    "slots": [
-                        {
-                            "name": "facility",
-                            "type": "facility"
-                        },
-                        {
-                            "name": "facility_problem",
-                            "type": "facility_problem"
-                        },
-                        {
-                            "name": "facility_request",
-                            "type": "facility_request"
-                        },
-                        {
-                            "name": "what",
-                            "type": "what"
-                        },
-                        {
-                            "name": "action",
-                            "type": "action"
-                        },
-                        {
-                            "name": "adv",
-                            "type": "adv"
-                        }
-                    ],
-                    "samples": [
-                        "{facility} の {action} {adv} してほしい",
-                        "{facility} が {facility_problem} のですが",
-                        "{facility} の {facility_request} が欲しいのですが",
-                        "{what} に連絡",
-                        "{what} に電話"
-                    ]
-                },
-                {
-                    "name": "is_it",
-                    "slots": [
-                        {
-                            "name": "service",
-                            "type": "service"
-                        },
-                        {
-                            "name": "service_time",
-                            "type": "service_time"
-                        }
-                    ],
-                    "samples": [
-                        "{service} は {service_time} 時間対応ですか",
-                        "{service} は {service_time} 時間ですか"
-                    ]
-                },
-                {
-                    "name": "turn_on_music",
-                    "slots": [
-                        {
-                            "name": "target_music",
-                            "type": "target_music"
-                        }
-                    ],
-                    "samples": [
-                        "{target_music} をはじめて",
-                        "{target_music} を始めて",
-                        "{target_music} をかけて",
-                        "{target_music} をつけて",
-                        "{target_music} つけて",
-                        "{target_music} かけて"
-                    ]
-                },
-                {
-                    "name": "general_what_is",
-                    "slots": [
-                        {
-                            "name": "general_what",
-                            "type": "general_what"
-                        },
-                        {
-                            "name": "what",
-                            "type": "what"
-                        }
-                    ],
-                    "samples": [
-                        "{general_what} 教えて",
-                        "{general_what} 知りたい",
-                        "今日の {general_what} 教えて",
-                        "今日の {general_what} は",
-                        "明日の {general_what} は",
-                        "明日の {general_what} を教えて",
-                        "今 {general_what}",
-                        "{general_what} は",
-                        "今 {what} は何の日",
-                        "今 {what} は何の日ですか",
-                        "今日の {what} は",
-                        "今日の {what} は何",
-                        "今 {what} は何日何曜日",
-                        "今 {what} 何日何曜日ですか",
-                        "{general_what} 時刻は",
-                        "{general_what} の時刻は何時",
-                        "今何 {general_what}",
-                        "{general_what} は何時"
-                    ]
-                },
-                {
-                    "name": "turn_off",
-                    "slots": [
-                        {
-                            "name": "target_facility",
-                            "type": "target_facility"
-                        }
-                    ],
-                    "samples": [
-                        "{target_facility} 止めて",
-                        "{target_facility} とめて",
-                        "{target_facility} ストップ",
-                        "{target_facility} 消して",
-                        "{target_facility} 消したい",
-                        "{target_facility} を消して",
-                        "{target_facility} を切って",
-                        "{target_facility} をリセット",
-                        "{target_facility} オフ",
-                        "{target_facility} をオフにして",
-                        "{target_facility} をやめて"
-                    ]
-                },
-                {
-                    "name": "turn_off_music",
-                    "slots": [
-                        {
-                            "name": "target_music",
-                            "type": "target_music"
-                        }
-                    ],
-                    "samples": [
-                        "{target_music} とめて",
-                        "{target_music} ストップ"
-                    ]
-                },
-                {
-                    "name": "turn_on",
-                    "slots": [
-                        {
-                            "name": "target_facility",
-                            "type": "target_facility"
-                        },
-                        {
-                            "name": "target",
-                            "type": "target"
-                        }
-                    ],
-                    "samples": [
-                        "{target_facility} セットして",
-                        "{target_facility} セットしたい",
-                        "{target_facility} つけて",
-                        "{target_facility} 見たい",
-                        "{target_facility} をつけて",
-                        "{target_facility} 聞きたい",
-                        "{target} で起こして",
-                        "{target} に音楽をかけて",
-                        "{target_facility} オン",
-                        "{target_facility} をオンにして",
-                        "{target_facility} を見せて",
-                        "{target_facility} を流して",
-                        "{target_facility} 流して",
-                        "{target_facility} をセットして",
-                        "{target_facility} して"
-                    ]
-                },
-                {
-                    "name": "turn_down",
-                    "slots": [
-                        {
-                            "name": "target_facility",
-                            "type": "target_facility"
-                        }
-                    ],
-                    "samples": [
-                        "{target_facility} をさげて",
-                        "{target_facility} を小さくして",
-                        "{target_facility} 下げて",
-                        "{target_facility} を暗くして"
-                    ]
-                },
-                {
-                    "name": "turn_up",
-                    "slots": [
-                        {
-                            "name": "target_facility",
-                            "type": "target_facility"
-                        }
-                    ],
-                    "samples": [
-                        "{target_facility} を上げて",
-                        "{target_facility} を大きくして"
-                    ]
-                },
-                {
-                    "name": "recommend",
-                    "slots": [
-                        {
-                            "name": "what",
-                            "type": "what"
-                        },
-                        {
-                            "name": "what_type",
-                            "type": "what_type"
-                        }
-                    ],
-                    "samples": [
-                        "{what_type} の {what} を教えて",
-                        "おすすめの {what} を教えてください",
-                        "{what} のおすすめは何",
-                        "{what_type} に美味しい {what} はありますか",
-                        "おすすめの {what}",
-                        "おすすめの {what} は何ですか",
-                        "{what} するのにおすすめの場所はどこですか",
-                        "{what} するのに良いのはどこ",
-                        "{what} のがおすすめですか",
-                        "ここでは {what} のが良いですか",
-                        "おすすめの {what} はありますか",
-                        "おすすめの {what} を教えて",
-                        "{what_type} に {what} はありますか",
-                        "この近くで {what} のがおすすめですか",
-                        "近くで {what} のがおすすめ",
-                        "{what} のことを教えてもらえますか",
-                        "{what} に関して教えて",
-                        "{what} 情報を教えて",
-                        "{what} の情報を教えてください",
-                        "{what} とドリンクの情報を開いて",
-                        "{what} と飲み物は何が置いてありますか",
-                        "{what} 情報を開いて",
-                        "{what} の情報を教えて",
-                        "おすすめを教えて",
-                        "何がおすすめ",
-                        "おすすめは何かありますか",
-                        "何がおすすめですか"
-                    ]
-                },
-                {
-                    "name": "general_where_is",
-                    "slots": [
-                        {
-                            "name": "place",
-                            "type": "place"
-                        },
-                        {
-                            "name": "place_type",
-                            "type": "place_type"
-                        },
-                        {
-                            "name": "facility",
-                            "type": "facility"
-                        }
-                    ],
-                    "samples": [
-                        "最寄り {facility} を教えて",
-                        "{place_type} の {place}",
-                        "最寄 {facility} を教えて"
-                    ]
-                },
-                {
-                    "name": "turn_next",
-                    "slots": [
-                        {
-                            "name": "target",
-                            "type": "target"
-                        }
-                    ],
-                    "samples": [
-                        "他の {target} をかけて",
-                        "次の {target} をかけて",
-                        "違う {target} 流して",
-                        "次の {target} を流して"
-                    ]
-                },
-                {
-                    "name": "general_show_me",
-                    "slots": [
-                        {
-                            "name": "what",
-                            "type": "what"
-                        }
-                    ],
-                    "samples": [
-                        "{what} を見せて",
-                        "近くの {what} を見せて"
-                    ]
-                },
-                {
-                    "name": "change",
-                    "slots": [
-                        {
-                            "name": "general_what",
-                            "type": "general_what"
-                        }
-                    ],
-                    "samples": [
-                        "{general_what} 表示に切り替えて"
-                    ]
-                },
-                {
-                    "name": "down",
-                    "slots": [
-                        {
-                            "name": "target_facility",
-                            "type": "target_facility"
-                        }
-                    ],
-                    "samples": [
-                        "部屋の {target_facility} を下げて"
-                    ]
-                },
-                {
-                    "name": "open",
-                    "slots": [
-                        {
-                            "name": "target_facility",
-                            "type": "target_facility"
-                        }
-                    ],
-                    "samples": [
-                        "{target_facility} を開いて",
-                        "{target_facility} にアクセスして"
-                    ]
-                },
-                {
-                    "name": "faq",
-                    "slots": [
-                        {
-                            "name": "alexa_feature_faq",
-                            "type": "alexa_feature_faq"
-                        }
-                    ],
-                    "samples": [
-                        "{alexa_feature_faq}",
-                        "{alexa_feature_faq} を見せて",
-                        "どんな {alexa_feature_faq} がありますか",
-                        "{alexa_feature_faq} のリストを見せて",
-                        "{alexa_feature_faq} の一覧を見せて",
-                        "{alexa_feature_faq} のリスト",
-                        "よくある質問のリストを見せて",
-                        "どんな質問が多い"
-                    ]
-                },
-                {
-                    "name": "order",
-                    "slots": [
-                        {
-                            "name": "orderable_item",
-                            "type": "orderable_item"
-                        }
-                    ],
-                    "samples": [
-                        "{orderable_item} を貸してください",
-                        "オーダーリスト",
-                        "注文の一覧を見せて",
-                        "注文のリストを見せて",
-                        "注文を確認",
-                        "何を注文したのか確認",
-                        "{orderable_item} が欲しい",
-                        "{orderable_item} をください",
-                        "{orderable_item} ちょうだい",
-                        "{orderable_item} を頼みたいのですが",
-                        "{orderable_item} が飲みたいです",
-                        "{orderable_item} が飲みたい"
+                        "{luggage} の事前送付は受け入れてもらえますか",
+                        "事前に {luggage} を送付するのは許可されていますか",
+                        "{luggage} を先に送付するのは大丈夫でしょうか",
+                        "事前の {luggage} の発送は問題ありませんか",
+                        "{luggage} の事前送付は可能でしょうか",
+                        "{luggage} を事前に発送することは許されていますか",
+                        "{luggage} を先に送付したいのですがそれは大丈夫ですか",
+                        "事前に {luggage} を送る予定ですが受け入れていただけますか",
+                        "{luggage} の事前発送は問題ないでしょうか",
+                        "事前に {luggage} を送付したいと思っていますがそれは可能ですか",
+                        "{luggage} を前に送る予定ですが大丈夫でしょうか",
+                        "私の {luggage} の事前送付は許可されていますか",
+                        "事前に {luggage} を送りたいのですがそれは問題ないでしょうか",
+                        "{luggage} を先に送る予定ですが受け取っていただけますか",
+                        "私の {luggage} の前の発送は大丈夫でしょうか",
+                        "{luggage} の前もっての発送は問題ないでしょうか",
+                        "私の {luggage} を事前に送ることは受け入れてもらえますか",
+                        "{luggage} の先送りは許可されていますか",
+                        "私の {luggage} を前に送るのは可能でしょうか",
+                        "{luggage} を事前発送したいと思っていますがそれは大丈夫でしょうか",
+                        "{luggage} の前もっての送付は許可されていますか",
+                        "{luggage} の早送りは問題ありませんか",
+                        "私の {luggage} の事前発送は可能でしょうか",
+                        "私は {luggage} を先に送りたいと考えていますが大丈夫でしょうか",
+                        "{luggage} を前に発送するのは受け入れてもらえますか",
+                        "私の {luggage} の早送りは問題ないでしょうか",
+                        "{luggage} の事前発送は受け取っていただけますか",
+                        "{luggage} を事前に送付することは大丈夫ですか",
+                        "私は {luggage} を事前に発送する予定ですがそれは許可されていますか",
+                        "{luggage} を先に送ることは受け入れてもらえますか",
+                        "事前に {luggage} の発送は大丈夫でしょうか",
+                        "{luggage} を前もって送付したいのですが問題ありませんか",
+                        "{luggage} の早送りは許可されていますか",
+                        "事前に {luggage} を発送するのは受け取っていただけますか",
+                        "{luggage} の事前送付は大丈夫でしょうか",
+                        "私の {luggage} を事前に送付するのは問題ないでしょうか",
+                        "{luggage} を前に発送したいのですがそれは可能ですか",
+                        "{luggage} の事前発送は許可されていますか",
+                        "事前に {luggage} の送付は大丈夫でしょうか",
+                        "{luggage} を先に発送するのは受け入れてもらえますか",
+                        "私の {luggage} を前もって送るのは問題ないでしょうか",
+                        "{luggage} の前の発送は可能でしょうか",
+                        "私の {luggage} の事前発送は受け取っていただけますか",
+                        "{luggage} を事前に送りたいと考えていますがそれは許可されていますか",
+                        "{luggage} を早送りするのは大丈夫でしょうか",
+                        "私の {luggage} の早送りは可能でしょうか",
+                        "事前に {luggage} の送付は問題ないでしょうか",
+                        "{luggage} を先に送付するのは受け取っていただけますか",
+                        "{luggage} の早送りは受け入れてもらえますか",
+                        "私の {luggage} を事前に発送するのは大丈夫でしょうか",
+                        "{luggage} を前もって発送したいのですがそれは許可されていますか",
+                        "前もって {luggage} を発送したいのですがそれは許可されていますか",
+                        "前もって {luggage} を送りたいのですがそれは許可されていますか",
+                        "前もって {luggage} を送りたいのですが",
+                        "前もって {luggage} を送りたいのですができますか",
+                        "前もって {luggage} を送りたいのですが可能ですか"
                     ]
                 },
                 {
@@ -698,7 +106,10 @@
                         },
                         {
                             "name": "room_number",
-                            "type": "AMAZON.NUMBER"
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{room_number}"
+                            ]
                         }
                     ],
                     "samples": [
@@ -711,1675 +122,485 @@
                     ]
                 },
                 {
-                    "name": "check_device",
-                    "slots": [],
+                    "name": "luggage_check_in",
+                    "slots": [
+                        {
+                            "name": "luggage",
+                            "type": "LUGGAGE"
+                        }
+                    ],
                     "samples": [
-                        "デバイスを確認して",
-                        "デバイスを確認"
+                        "チェックイン前やアウト後に {luggage} を保管していただくことは可能ですか",
+                        "{luggage} をチェックイン前やチェックアウト後に預けることはできますか",
+                        "私の {luggage} をチェックイン前やアウト後にお預かりいただけますか",
+                        "{luggage} をチェックイン前やアウト後に保管してもらえますか",
+                        "私はチェックイン前やアウト後に {luggage} を預けたいと思っていますがそれは可能ですか",
+                        "チェックイン前やアウト後に私の {luggage} を保管することは可能ですか",
+                        "{luggage} をチェックイン前やアウト後に預かっていただくことは可能でしょうか",
+                        "チェックイン前やアウト後に {luggage} を預かってもらうことはできますか",
+                        "私の {luggage} をチェックイン前やアウト後に預けることは許可されていますか",
+                        "{luggage} をチェックイン前やアウト後に保管することは可能ですか",
+                        "チェックイン前やチェックアウト後に私の {luggage} を預けることは可能ですか",
+                        "私の {luggage} をチェックイン前やチェックアウト後に保管していただけますか",
+                        "チェックイン前やアウト後に {luggage} を預けることは許可されていますか",
+                        "{luggage} をチェックイン前やアウト後にお預かりいただけますか",
+                        "チェックイン前やアウト後に私の {luggage} をお預かりいただくことは可能ですか",
+                        "私の {luggage} をチェックイン前やアウト後に預かってもらえますか",
+                        "チェックイン前やアウト後に {luggage} を預けることは可能でしょうか",
+                        "私の {luggage} をチェックイン前やチェックアウト後に預けることは大丈夫ですか",
+                        "{luggage} をチェックイン前やアウト後に預けることは問題ありませんか",
+                        "チェックイン前やアウト後に私の {luggage} を保管してもらえますか",
+                        "{luggage} をチェックイン前やチェックアウト後に預けてもらうことはできますか",
+                        "私の {luggage} をチェックイン前やアウト後に預けることは問題ないでしょうか",
+                        "チェックイン前やアウト後に {luggage} を預かってもらうことは許可されていますか",
+                        "{luggage} をチェックイン前やチェックアウト後に預けることは大丈夫ですか",
+                        "チェックイン前やチェックアウト後に私の {luggage} を預けることは許可されていますか",
+                        "私の {luggage} をチェックイン前やチェックアウト後に預けることは可能でしょうか",
+                        "チェックイン前やアウト後に {luggage} を預けてもらうことは問題ありませんか",
+                        "{luggage} をチェックイン前やアウト後に預かってもらうことは大丈夫ですか",
+                        "チェックイン前やチェックアウト後に私の {luggage} を預かってもらうことは問題ないでしょうか",
+                        "私の {luggage} をチェックイン前やアウト後に預けることは許可されていますか",
+                        "チェックイン前やアウト後に {luggage} を預けることは問題ないでしょうか",
+                        "{luggage} をチェックイン前やチェックアウト後に預けることは可能ですか",
+                        "チェックイン前やアウト後に私の {luggage} を預けることは大丈夫ですか",
+                        "私の {luggage} をチェックイン前やアウト後に預けてもらうことは問題ありませんか",
+                        "チェックイン前やアウト後に {luggage} を預けることは可能ですか",
+                        "{luggage} をチェックイン前やアウト後に預けることは大丈夫でしょうか",
+                        "チェックイン前やチェックアウト後に私の {luggage} を預けることは問題ありませんか",
+                        "私の {luggage} をチェックイン前やアウト後に預けることは可能ですか",
+                        "チェックイン前やアウト後に {luggage} を預けてもらうことは大丈夫でしょうか",
+                        "{luggage} をチェックイン前やチェックアウト後に預けることは問題ないでしょうか",
+                        "チェックイン前やアウト後に私の {luggage} を預けてもらうことは可能ですか",
+                        "私の {luggage} をチェックイン前やアウト後に預けることは大丈夫でしょうか",
+                        "チェックイン前やアウト後に {luggage} を預けることは可能でしょうか",
+                        "{luggage} をチェックイン前やアウト後に預けてもらうことは可能でしょうか",
+                        "チェックイン前やチェックアウト後に私の {luggage} を預けることは可能でしょうか",
+                        "私の {luggage} をチェックイン前やチェックアウト後に預けることは可能でしょうか"
                     ]
                 },
                 {
-                    "name": "AMAZON.PauseIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.ResumeIntent",
-                    "samples": []
-                },
-                {
-                    "name": "chat_service",
-                    "slots": [],
+                    "name": "luggage_keep_in_stay",
+                    "slots": [
+                        {
+                            "name": "luggage",
+                            "type": "LUGGAGE"
+                        }
+                    ],
                     "samples": [
-                        "チャットサービス"
+                        "{luggage} を連泊中に部屋に置いておいてもよいですか",
+                        "連泊中に {luggage} を部屋に残しておいても問題ないですか",
+                        "{luggage} を部屋に保管してもよいのは連泊中だけですか",
+                        "連泊中に部屋に {luggage} を残すことは許可されていますか",
+                        "{luggage} を部屋に置いておけるのは連泊中だけですか",
+                        "連泊中に {luggage} を部屋に残すことは可能ですか",
+                        "{luggage} を部屋に残すことは連泊中だけ可能ですか",
+                        "連泊中に部屋に {luggage} を保管することは許可されていますか",
+                        "{luggage} を部屋に置くことは連泊中だけですか",
+                        "連泊中に {luggage} を部屋に残すことは許可されていますか",
+                        "{luggage} を部屋に置くことは連泊中だけ許可されていますか",
+                        "連泊中に部屋に {luggage} を置いておくことは可能ですか",
+                        "{luggage} を部屋に残すことは連泊中だけですか",
+                        "連泊中に部屋に {luggage} を置いておくことは許可されていますか",
+                        "{luggage} を部屋に残すことは連泊中だけ可能ですか",
+                        "連泊中に部屋に {luggage} を保管することは可能ですか",
+                        "{luggage} を部屋に置いておくことは連泊中だけ許可されていますか",
+                        "連泊中に部屋に {luggage} を置いておくことは許可されていますか",
+                        "{luggage} を部屋に置いておくことは連泊中だけ可能ですか",
+                        "連泊中に部屋に {luggage} を保管することは許可されていますか",
+                        "{luggage} を部屋に置くことは連泊中だけ可能ですか",
+                        "連泊中に部屋に {luggage} を置いておくことは可能ですか",
+                        "{luggage} を部屋に残すことは連泊中だけ許可されていますか",
+                        "連泊中に部屋に {luggage} を置くことは許可されていますか",
+                        "{luggage} を部屋に置くことは連泊中だけ許可されていますか",
+                        "連泊中に部屋に {luggage} を保管することは可能ですか",
+                        "{luggage} を部屋に保管することは連泊中だけ可能ですか",
+                        "連泊中に部屋に {luggage} を置くことは可能ですか",
+                        "{luggage} を部屋に置くことは連泊中だけですか",
+                        "連泊中に部屋に {luggage} を置くことは可能ですか",
+                        "{luggage} を部屋に保管することは連泊中だけ許可されていますか",
+                        "連泊中に部屋に {luggage} を置いておくことは可能ですか",
+                        "{luggage} を部屋に置くことは連泊中だけ可能ですか",
+                        "連泊中に部屋に {luggage} を置くことは許可されていますか",
+                        "{luggage} を部屋に保管することは連泊中だけ許可されていますか",
+                        "連泊中に部屋に {luggage} を置くことは可能ですか",
+                        "{luggage} を部屋に置くことは連泊中だけ許可されていますか",
+                        "連泊中に部屋に {luggage} を置くことは許可されていますか",
+                        "{luggage} を部屋に保管することは連泊中だけ可能ですか",
+                        "連泊中に部屋に {luggage} を置くことは可能ですか",
+                        "{luggage} を部屋に置いておくことは連泊中だけ可能ですか",
+                        "連泊中に部屋に {luggage} を置いておくことは許可されていますか",
+                        "{luggage} を部屋に置くことは連泊中だけ可能ですか",
+                        "連泊中に部屋に {luggage} を置くことは可能ですか",
+                        "{luggage} を部屋に置くことは連泊中だけ許可されていますか",
+                        "連泊中に部屋に {luggage} を置くことは許可されていますか",
+                        "{luggage} を部屋に置いておくことは連泊中だけ可能ですか",
+                        "連泊中に部屋に {luggage} を置くことは可能ですか",
+                        "{luggage} を部屋に置くことは連泊中だけ許可されていますか",
+                        "連泊中に部屋に {luggage} を置くことは許可されていますか",
+                        "{luggage} を部屋に置くことは連泊中だけ可能ですか",
+                        "連泊中に部屋に {luggage} を置くことは可能ですか"
                     ]
                 },
                 {
-                    "name": "top",
-                    "slots": [],
+                    "name": "facility_check",
+                    "slots": [
+                        {
+                            "name": "facility",
+                            "type": "FACILITY"
+                        }
+                    ],
                     "samples": [
-                        "トップ画面に戻って",
-                        "トップ"
+                        "{facility} はしてもらえますか ",
+                        "長期滞在中は {facility} はしてもらえますか",
+                        "客室 {facility}  を教えてください",
+                        "{facility} を利用することは許可されていますか",
+                        "{facility} を使用することは許可されていますか",
+                        "{facility} は使用可能ですか",
+                        "{facility} は使用できますか",
+                        "{facility} の利用は許可されていますか",
+                        "私は {facility} を利用できますか",
+                        "{facility} は利用できるのですか",
+                        "{facility} の使用は可能ですか",
+                        "私が {facility} を利用できるのは確かですか",
+                        "{facility} を利用できますか",
+                        "{facility} は利用可能なのですか",
+                        "{facility} の使用は許可されていますか",
+                        "私は {facility} を使うことができますか",
+                        "{facility} は利用可能ですか",
+                        "{facility} の利用は可能ですか",
+                        "私が {facility} を使うことは可能ですか",
+                        "{facility} を使ってもいいですか",
+                        "{facility} はありますか",
+                        "どんな {facility} がありますか",
+                        "{facility} の一覧を教えてください",
+                        "{facility} には何がありますか",
+                        "{facility} はございますか",
+                        "{facility} はどうなっていますか",
+                        "{facility} には何が備わっていますか",
+                        "{facility} の設備を教えてください",
+                        "{facility} の種類を教えてください",
+                        "{facility} に何があるのか教えてください",
+                        "{facility} には何が完備されていますか",
+                        "{facility} にはどのようなものがありますか",
+                        "{facility} はどのように整備されていますか",
+                        "{facility} にはどのような設備が備わっていますか",
+                        "{facility} には何が設置されていますか",
+                        "{facility} には何が提供されていますか",
+                        "{facility} はどういうものですか",
+                        "{facility} はどのようなものですか",
+                        "{facility} には何が用意されていますか",
+                        "{facility} はどのように備えられていますか",
+                        "{facility} には何が備え付けられていますか",
+                        "{facility} には何がありますか教えてください",
+                        "{facility} には何があるのですか",
+                        "{facility} にはどのようなものが設置されていますか",
+                        "{facility} はどうなっているのですか",
+                        "{facility} には何がそろっていますか",
+                        "{facility} には何が整っていますか",
+                        "{facility} には何が整備されていますか",
+                        "{facility} にはどのようなものが揃っていますか",
+                        "{facility} にはどのようなものが備わっているのですか",
+                        "{facility} はどんなものがありますか",
+                        "{facility} にはどんなものが備わっていますか",
+                        "{facility} にはどのような設備があるのか教えてください",
+                        "{facility} にはどんなものが整っていますか",
+                        "{facility} は存在しますか",
+                        "{facility} がありますか",
+                        "{facility} は設けられていますか",
+                        "{facility} は備わっていますか",
+                        "{facility} は備えられていますか",
+                        "{facility} は提供されていますか",
+                        "{facility} は用意されていますか",
+                        "館内に {facility} は用意されていますか",
+                        "館内に {facility} はありますか",
+                        "館内で {facility} は利用できますか",
+                        "館内で {facility} は設置されていますか",
+                        "館内で {facility} は儲けられていますか",
+                        "ホテルに {facility} は用意されていますか",
+                        "ホテルに {facility} はありますか",
+                        "ホテルで {facility} は利用できますか",
+                        "ホテルで {facility} は設置されていますか",
+                        "ホテルで {facility} は儲けられていますか",
+                        "部屋に {facility} は用意されていますか",
+                        "部屋に {facility} はありますか",
+                        "部屋で {facility} は利用できますか",
+                        "部屋で {facility} は設置されていますか",
+                        "部屋で {facility} は備えられていますか",
+                        "{facility} の情報を教えていただけますか",
+                        "{facility} についての詳細を知りたいです",
+                        "{facility} に関する情報を共有してください",
+                        "{facility} の詳細を教えていただけますか",
+                        "{facility} について何か知っていますか",
+                        "{facility} のことを詳しく教えてください",
+                        "{facility} についてどんなことでもいいので教えてください",
+                        "{facility} について詳しく説明していただけますか",
+                        "{facility} の詳細を知りたいです",
+                        "{facility} について何か教えていただけますか",
+                        "{facility} の情報を共有していただけますか",
+                        "{facility} に関する詳細を教えてください",
+                        "{facility} についての詳細を教えていただけますか",
+                        "{facility} の詳細情報を提供してください",
+                        "{facility} について何を知っていますか",
+                        "{facility} について詳しく知りたいです",
+                        "{facility} についてもっと教えていただけますか",
+                        "{facility} に関する情報を教えてください",
+                        "{facility} の詳細について教えていただけますか",
+                        "{facility} についてもっと詳しく知りたいです"
                     ]
                 },
                 {
-                    "name": "do_not_disturb",
-                    "slots": [],
+                    "name": "payment_check",
+                    "slots": [
+                        {
+                            "name": "payment_method",
+                            "type": "PAYMENT_METHOD"
+                        }
+                    ],
                     "samples": [
-                        "部屋に入ってほしくない場合はどうしたらいい"
+                        "{payment_method} は発行できますか",
+                        "{payment_method} は使えますか",
+                        "代金の支払いはいつ行えばよいですか",
+                        "{payment_method} を提供することは可能ですか",
+                        "{payment_method} は利用可能ですか",
+                        "料金の決済はいつすればいいですか",
+                        "{payment_method} は発行が可能ですか",
+                        "{payment_method} は私たちが使えますか",
+                        "料金の支払いはいつすれば適切ですか",
+                        "{payment_method} を設定することはできますか",
+                        "{payment_method} はここで使うことができますか",
+                        "費用の支払いは何時になりますか",
+                        "{payment_method} を用意することができますか",
+                        "{payment_method} を使用できますか",
+                        "代金はいつ払わなければならないですか",
+                        "{payment_method} を作成することができますか",
+                        "{payment_method} を我々は使うことができますか",
+                        "支払いは何時に行えばいいですか",
+                        "{payment_method} を生成することができますか",
+                        "{payment_method} をここで使うことはできますか",
+                        "代金の清算は何時に行うべきですか",
+                        "{payment_method} を取り扱うことができますか",
+                        "{payment_method} は我々にとって使用可能ですか",
+                        "支払いは何時にすればいいのですか",
+                        "{payment_method} を立ち上げることはできますか",
+                        "{payment_method} は利用できますか",
+                        "料金の支払いは何時にするべきですか",
+                        "{payment_method} を起動することができますか",
+                        "{payment_method} は私たちに利用できますか",
+                        "費用の清算は何時にするべきですか",
+                        "{payment_method} を実装することは可能ですか",
+                        "{payment_method} を私たちが使うことは可能ですか",
+                        "費用の支払いは何時にすればいいのでしょうか",
+                        "{payment_method} を開始することは可能ですか",
+                        "{payment_method} を私たちが利用できますか",
+                        "料金の決済はいつすればいいのでしょうか",
+                        "{payment_method} を導入することはできますか",
+                        "{payment_method} は利用可能でしょうか",
+                        "支払いは何時になりますか",
+                        "{payment_method} を開設することはできますか",
+                        "{payment_method} は使用できますか",
+                        "代金の清算は何時に行わなければならないですか",
+                        "{payment_method} を初期化することができますか",
+                        "{payment_method} は使用可能ですか",
+                        "費用は何時に支払うべきですか",
+                        "{payment_method} を活用することはできますか",
+                        "{payment_method} は使うことができますか",
+                        "支払いは何時にすれば適切ですか",
+                        "{payment_method} を適用することはできますか",
+                        "{payment_method} を使うことは可能ですか",
+                        "代金の支払いはいつ行うべきですか",
+                        "{payment_method} を採用することができますか",
+                        "{payment_method} は利用できるのでしょうか",
+                        "料金の支払いは何時にするべきでしょうか"
                     ]
                 },
                 {
-                    "name": "policy",
-                    "slots": [],
+                    "name": "booking_check",
+                    "slots": [
+                        {
+                            "name": "booking_option",
+                            "type": "BOOKING_OPTION"
+                        }
+                    ],
                     "samples": [
-                        "宿泊約款を開いて",
-                        "宿泊約款"
+                        "予約は {booking_option} 可能ですか",
+                        "宿泊の {booking_option} はかかりますか",
+                        "宿泊の {booking_option} はできますか",
+                        "{booking_option} でも予約できますか",
+                        "{booking_option} ができますか"
                     ]
                 },
                 {
-                    "name": "proceed_to_checkout",
+                    "name": "check_in_out_check",
+                    "slots": [
+                        {
+                            "name": "check_in_out",
+                            "type": "CHECK_IN_OUT"
+                        }
+                    ],
+                    "samples": [
+                        "{check_in_out} どうすればよいですか",
+                        "{check_in_out} はできますか",
+                        "{check_in_out} 時間を教えてください",
+                        "{check_in_out} にホテルの施設を利用できますか",
+                        "{check_in_out} 教えてください"
+                    ]
+                },
+                {
+                    "name": "meal_time_check",
+                    "slots": [
+                        {
+                            "name": "meal",
+                            "type": "MEAL"
+                        }
+                    ],
+                    "samples": [
+                        "{meal}できますか ",
+                        "{meal} の時間を教えてください ",
+                        "{meal} の時間は何時ですか",
+                        "{meal} は何時からですか",
+                        "{meal} の開始時間を教えていただけますか",
+                        "{meal} は何時に開始しますか",
+                        "{meal} の時間について教えてもらえますか",
+                        "{meal} の開始時間と終了時間を教えてもらえますか",
+                        "{meal} のサービス時間を教えていただけますか",
+                        "{meal} の時間スケジュールを教えてください",
+                        "{meal} の提供時間は何時ですか",
+                        "{meal} の時間は何時から何時までですか",
+                        "何時から何時まで {meal} を提供していますか",
+                        "{meal} をいただく時間は何時ですか",
+                        "何時に {meal} が始まりますか",
+                        "何時に {meal} が終わりますか",
+                        "{meal} の時間について詳しく教えてもらえますか",
+                        "{meal} の時間を確認させていただけますか",
+                        "何時に {meal} を開始しますか",
+                        "{meal} は何時までですか",
+                        "{meal} の時間帯は何ですか",
+                        "何時から {meal} を提供していますか"
+                    ]
+                },
+                {
+                    "name": "meal_check",
                     "slots": [],
                     "samples": [
-                        "注文を確定する",
-                        "注文を確定"
+                        "アレルギーや信仰上の制限により食べることができない食品を避けることは可能ですか",
+                        "特定の食材を避けるための食事オプションはありますか",
+                        "アレルギー対応や宗教上の制約に合わせて食事を調整できますか",
+                        "食材の除去をお願いすることは可能ですか",
+                        "アレルギーや宗教的な理由から特定の食材を食べられない場合対応していただけますか",
+                        "アレルギーや宗教上の理由から食べられない食品を省くことはできますか",
+                        "食材の制限がある場合の対応は可能ですか",
+                        "私のダイエット要求に合わせて食事を提供してもらえますか",
+                        "特定の食材を食事から排除することはできますか",
+                        "私の食事制限を満たすために食事を調整することは可能ですか",
+                        "私が食べられない食材を食事から除外することは可能ですか",
+                        "食事の中から特定の食材を取り除くことは可能ですか",
+                        "私が食べられないものを考慮した食事を提供してもらえますか",
+                        "私の食事制限を尊重して食事を提供してもらえますか",
+                        "食材を取り除くためのオプションはありますか",
+                        "特定の食材を省く食事の提供は可能ですか",
+                        "私が食べられない食材を食事から除くことは可能ですか",
+                        "アレルギーや宗教的な制限に対応した食事を提供してもらえますか",
+                        "食事から特定の食材を省くことはできますか",
+                        "アレルギーまたは宗教的な理由で特定の食材を避けることはできますか"
+                    ]
+                },
+                {
+                    "name": "ask_bring_room_key",
+                    "slots": [],
+                    "samples": [
+                        "ルームキーは外出時に持ち歩いてもいいですか"
+                    ]
+                },
+                {
+                    "name": "ask_inviting_others",
+                    "slots": [],
+                    "samples": [
+                        "宿泊しない知人を客室に呼べますか"
+                    ]
+                },
+                {
+                    "name": "ask_open_hours",
+                    "slots": [],
+                    "samples": [
+                        "門限はありますか"
                     ]
                 }
             ],
             "types": [
                 {
-                    "name": "recommend_type",
+                    "name": "LUGGAGE",
                     "values": [
                         {
                             "name": {
-                                "value": "sightseeing",
-                                "synonyms": [
-                                    "観光"
-                                ]
+                                "value": "スーツケース"
                             }
                         },
                         {
                             "name": {
-                                "value": "service",
+                                "value": "荷物",
                                 "synonyms": [
-                                    "サービス"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "food_drink",
-                                "synonyms": [
-                                    "飲食",
-                                    "食べ物や飲み物",
-                                    "飲む",
-                                    "食物"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "shopping",
-                                "synonyms": [
-                                    "買い物"
+                                    "手荷物"
                                 ]
                             }
                         }
                     ]
                 },
                 {
-                    "name": "orderable_item",
+                    "name": "FACILITY",
                     "values": [
                         {
                             "name": {
-                                "value": "クリーニングサービス"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ランドリー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ランドリーサービス"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "クリーニング"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "髭剃り",
+                                "value": "清掃",
                                 "synonyms": [
-                                    "ひげそり"
+                                    "クリーニング",
+                                    "部屋の掃除",
+                                    "掃除"
                                 ]
                             }
                         },
                         {
                             "name": {
-                                "value": "ハーブティー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "スリッパ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "タオル3点セット",
+                                "value": "バリアフリー",
                                 "synonyms": [
-                                    "タオル三点セット"
+                                    "障がい者フレンドリー"
                                 ]
                             }
                         },
                         {
                             "name": {
-                                "value": "タオルセット"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ほうじ茶"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "紅茶"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "パイプ枕"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "裁縫セット"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "リフレッシュハーブティー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "サザンタワーブレンド"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ティーバッグ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "コップ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "バスルームグラス"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ロックグラス"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "リビンググラス"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "大きいスプーン"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "デザートスプーン"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "作務衣"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "剃刀"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ヘアーリキッド"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "整髪料"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "そば殻枕",
+                                "value": "インターネット",
                                 "synonyms": [
-                                    "そば枕"
+                                    "通信",
+                                    "ネットワーク",
+                                    "ネット"
                                 ]
                             }
                         },
                         {
                             "name": {
-                                "value": "子供用スリッパ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "オードブルナイフ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "フォーク"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ワイングラス"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "シャンパングラス"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "携帯充電器",
+                                "value": "アメニティ",
                                 "synonyms": [
-                                    "充電器"
+                                    "アメニティグッズ"
                                 ]
                             }
                         },
                         {
                             "name": {
-                                "value": "毛布",
+                                "value": "アクセス",
                                 "synonyms": [
-                                    "ブランケット"
+                                    "行きかた",
+                                    "行き方",
+                                    "アクセス方法"
                                 ]
                             }
                         },
                         {
                             "name": {
-                                "value": "ゆかた"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "コットン枕"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "アダプター"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "割り箸",
+                                "value": "風呂・トイレ",
                                 "synonyms": [
-                                    "箸"
+                                    "ふろトイレ",
+                                    "風呂トイレ"
                                 ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "子供用ゆかた"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "バゲージラック"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ボトルウォーター",
-                                "synonyms": [
-                                    "ミネラルウォーター"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "パイルスリッパ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "シャワーキャップ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ハブラシ",
-                                "synonyms": [
-                                    "歯ブラシ"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "コットンセット"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ヘアーブラシ",
-                                "synonyms": [
-                                    "ブラシ"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ランドリーバッグ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ランドリー用紙",
-                                "synonyms": [
-                                    "ランドリースリップ"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "シューシャインペーパー",
-                                "synonyms": [
-                                    "シューシャイン"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "景観図",
-                                "synonyms": [
-                                    "ビュー"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "マグカップ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "レザー",
-                                "synonyms": [
-                                    "剃刀"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ボディースクラブ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ティッシュ",
-                                "synonyms": [
-                                    "ティッシュペーパー"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "トイレットペーパー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "緑茶パック"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ナイトシャツ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "枕",
-                                "synonyms": [
-                                    "ピロー"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ハンガー",
-                                "synonyms": [
-                                    "追加のハンガー"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "皿",
-                                "synonyms": [
-                                    "さら"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "便箋"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "封筒",
-                                "synonyms": [
-                                    "エンベロップ"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "綿棒"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "電気スタンド"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "アイロンとボード",
-                                "synonyms": [
-                                    "ボード",
-                                    "アイロン＆ボード",
-                                    "アイロン",
-                                    "アイロンボード"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ズボンプレッサー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "体重計",
-                                "synonyms": [
-                                    "ヘルスメーター"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ベッドガード"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ワインクーラー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "延長コード"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ワインオープナー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "栓抜き"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ソーイングセット"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "固形石鹸",
-                                "synonyms": [
-                                    "石鹸"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "つめきり"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "はさみ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "体温計"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "シャンプー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "コンディショナー",
-                                "synonyms": [
-                                    "リンス"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ボディーシャンプー",
-                                "synonyms": [
-                                    "ボディーソープ"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ハンドソープ",
-                                "synonyms": [
-                                    "フェイスソープ"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "メモパット",
-                                "synonyms": [
-                                    "メモ用紙"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ゲストコメント"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ボールペン",
-                                "synonyms": [
-                                    "ペン"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "リセッシュ",
-                                "synonyms": [
-                                    "消臭剤"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "バスマット"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ブルーレイプレイヤー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "タオル一式",
-                                "synonyms": [
-                                    "タオル1セット",
-                                    "タオルセット"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "タオル"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ビール"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ハイボール",
-                                "synonyms": [
-                                    "サントリーハイボール"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "伊右衛門",
-                                "synonyms": [
-                                    "いえもん"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "コカコーラ",
-                                "synonyms": [
-                                    "コーラ"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "プリングルス"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ナッツとクラッカー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "c タイプアダプター",
-                                "synonyms": [
-                                    "c タイプアダプター",
-                                    "c タイプ アダプター"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "o タイプアダプター",
-                                "synonyms": [
-                                    "o タイプアダプター",
-                                    "o タイプ アダプター"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "3ピンアダプター",
-                                "synonyms": [
-                                    "3ピン アダプター"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "2ピンアダプター",
-                                "synonyms": [
-                                    "2ピン アダプター"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "バスタオル"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "フェイスタオル"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ハンドタオル"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ナッツ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "クラッカー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "日本茶パック"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "お茶パック"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "デザートナイフ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ナイフ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "硬い枕"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "羽毛ではない枕"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "水"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "化粧用コットン"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ボディータオル"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ナイトウェアー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "パジャマ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "クリップつきハンガー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "陶器"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "シャンパンクーラー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "オープナー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "針と糸"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "縫い針"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "DVDデッキ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "サントリープレミアムモルツ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "プレミアムモルツ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "体を洗うタオル"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "アンケート"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "コメントカード"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "洗面コップ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "羽毛枕"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "スマートフォン充電器"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "アイフォン充電器"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "アンドロイド充電器"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "カップ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ティーカップ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "空気清浄機"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "DVDプレイヤー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ベビーシャンプー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ベビー全身ソープ",
-                                "synonyms": [
-                                    "ベビーソープ"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ベビーバス"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ベビーベッド"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "メイク落とし"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "クレンジング"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "洗顔"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ウォッシュモイスチャー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "化粧水"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "モイスチャーローション"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "乳液"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "モイスチャーミルク"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "スプーン"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ティースプーン"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "小さいスプーン"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "グラス"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "タンブラー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "プラグ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "マルチプラグ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ヘヤーリキット"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ヘヤートニック"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "男性用化粧品"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "緑茶"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "日本茶"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "お茶"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "コーヒー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "砂糖"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ミルク"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "加湿器"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ガムテープ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "シュガー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "テープ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "おねしょシーツ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "防水シーツ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "かさ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "アイス枕"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "氷枕"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "熱さまシート"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ひえぴた"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "子供用ひえぴた"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "アイスペール"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "氷入れ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ハンディスチーマー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "スチーマー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "スチームアイロン"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ヘアアイロン"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "生理用品"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ハイブリッドヘッドフォン"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "スイッチ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "tv ゲーム",
-                                "synonyms": [
-                                    "t vゲーム",
-                                    "t v ゲーム"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "tv ゲームソフト",
-                                "synonyms": [
-                                    "t vゲームソフト",
-                                    "t v ゲームソフト"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ｽｰﾊﾟｰﾏﾘｵﾊﾟｰﾃｨ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "vr ゴーグル",
-                                "synonyms": [
-                                    "VR ゴーグル",
-                                    "v rゴーグル",
-                                    "v r ゴーグル"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "vr 用保護シート",
-                                "synonyms": [
-                                    "VR 用保護シート",
-                                    "v r用保護シート",
-                                    "v r 用保護シート"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "黒ひげ危機一髪"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ジェンガ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ウノ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ミニオンズ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ポケットモンスター"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ポケモン"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "マグネットリバーシ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "オセロ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "おもちゃセット"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "トランプ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ベビー用布団一式"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "子供用補助便座"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "子供用便座"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "補助便座スタンド"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "便座スタンド"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ベビーチェア"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "子供用椅子"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "子供用踏台"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "洗顔用泡立てネット"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "シューシャインクロス"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "靴磨き"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "お子さま用スポンジ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "子供用スポンジ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "お子さま用歯ブラシ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "子供用歯ブラシ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "カールサンジュウニミリ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "カールサンジュウニミリストレート"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "知恵の輪",
-                                "synonyms": [
-                                    "チエノワ"
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "facility",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "貸出品",
-                                "synonyms": [
-                                    "貸出引",
-                                    "ガッシュベル"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "空気清浄機"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ウエットティッシュ"
-                            }
-                        },
-                        {
-                            "id": "any",
-                            "name": {
-                                "value": "何"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "温泉"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "大浴場",
-                                "synonyms": [
-                                    "愛浴場"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "避難経路"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "エキストラベッド"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "追加のベッド"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ドライヤー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "加湿器"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "携帯電話の充電器"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "携帯の充電器"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "パジャマ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "浴衣"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "車椅子"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "爪切り"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "電気ポット"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "電子レンジ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "冷蔵庫"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "DVDプレーヤー",
-                                "synonyms": [
-                                    "d. v. d. プレーヤー"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "イヤホン"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "トランプ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ズボンプレッサー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ビーチグッズ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ベッドガード",
-                                "synonyms": [
-                                    "レッドガード"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ベビーカー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ベビーバス"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ベビーベッド"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "レンタカー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "レンタサイクル"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "館内着",
-                                "synonyms": [
-                                    "関内義 ",
-                                    "観覧技 ",
-                                    "管内議",
-                                    "管内機"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "空気清浄器"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "傘"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "部屋"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "製氷機"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "貸し金庫",
-                                "synonyms": [
-                                    "貸金庫",
-                                    "ダスキンク"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "テレビ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "洗濯機"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "電気ケトル"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "空調"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "エアコン"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "アメニティ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "キッチン用品"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ジェンガ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "荷物の量り",
-                                "synonyms": [
-                                    "荷物の測り",
-                                    "荷物量り",
-                                    "荷物の量り",
-                                    "荷物のはかり"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "絵本"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "血圧計"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "おもちゃ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "TV",
-                                "synonyms": [
-                                    "テレビ"
-                                ]
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "スパ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "atm"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "カラオケ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "コインランドリー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ジム"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "パーティールーム"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "プリンター"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "駐車場"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "自動販売機"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "自販機"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ラウンジ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "化粧室"
                             }
                         },
                         {
@@ -2389,716 +610,689 @@
                         },
                         {
                             "name": {
-                                "value": "プール"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "バー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "会議室"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "宴会場"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ゲームコーナー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "展望台"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "卓球台"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "wifi",
+                                "value": "風呂",
                                 "synonyms": [
-                                    "wi fi",
-                                    "wifi",
-                                    "WI-FI",
-                                    "Wifi",
-                                    "Wi-Fi"
+                                    "バスルーム"
                                 ]
                             }
                         },
                         {
                             "name": {
-                                "value": "インターネット"
+                                "value": "ドライヤー"
                             }
                         },
                         {
                             "name": {
-                                "value": "朝食"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "夕食"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "駅"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "喫煙所"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "シャトルバス"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "売店"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ビデオ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "映画"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "facility_type",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "外国のTV",
+                                "value": "冷蔵庫",
                                 "synonyms": [
-                                    "外国の tv",
-                                    "外国のtv"
+                                    "リフレジスター"
                                 ]
                             }
                         },
                         {
                             "name": {
-                                "value": "効能"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "泉質",
+                                "value": "金庫",
                                 "synonyms": [
-                                    "性質"
+                                    "貴重品の保管庫",
+                                    "貴重品を保管するボックス"
                                 ]
                             }
                         },
                         {
                             "name": {
-                                "value": "浴衣"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "入れ替え"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "入れ替え時間"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "子供用"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "小さい子向け"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "小さい子用"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "子供向け"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "子供"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "外国語放送"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "外国の"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "英語放送"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "車椅子対応",
+                                "value": "コンビニ",
                                 "synonyms": [
-                                    "車いす対応"
+                                    "近くにコンビニ",
+                                    "コンビニエンスストア",
+                                    "近くのコンビニ"
                                 ]
                             }
                         },
                         {
                             "name": {
-                                "value": "車椅子用"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "番組表"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "reservation",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "予約内容"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "what",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "災害"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "地震"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "フロント"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "スポット"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "日"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "運勢"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "地図"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "レストラン"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "食べ物"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ショッピング"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "買い物"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "何をする"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "サービス"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "フード"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "facilities",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "貸出品"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "facility_problem",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "効かない"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "facility_function",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "強く"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "facility_request",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "追加"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "レンタル"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "service",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "荷物の計量"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "チェックアウト"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "レイトチェックアウト"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "フロントデスク"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "フロント"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ルームサービス"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "朝食"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ディナー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "夕飯"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "facility_detail",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "高さ"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "service_request",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "変更"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "service_time",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "24",
+                                "value": "宿泊者専用ラウンジ",
                                 "synonyms": [
-                                    "二十四",
-                                    "2 4"
+                                    "宿泊者のラウンジ",
+                                    "宿泊者のみが入れるラウンジ",
+                                    "宿泊者だけが入れるラウンジ",
+                                    "宿泊者用のラウンジ"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "喫煙ルーム",
+                                "synonyms": [
+                                    "禁煙でない部屋",
+                                    "禁煙ではない部屋",
+                                    "たばこの吸える部屋",
+                                    "喫煙可能な部屋",
+                                    "タバコの吸える部屋"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "禁煙ルーム",
+                                "synonyms": [
+                                    "喫煙ではない部屋",
+                                    "喫煙でない部屋",
+                                    "喫煙できない部屋",
+                                    "たばこの吸えない部屋",
+                                    "禁煙の部屋"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "喫煙所",
+                                "synonyms": [
+                                    "タバコ",
+                                    "煙草",
+                                    "タバコを吸える場所",
+                                    "タバコの吸える所",
+                                    "喫煙できる場所",
+                                    "喫煙場所",
+                                    "喫煙できる所"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "会議室",
+                                "synonyms": [
+                                    "会議スペース",
+                                    "ミーティングルーム"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "パソコンの貸し出し",
+                                "synonyms": [
+                                    "パソコンの貸し出しサービス"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "自動販売機",
+                                "synonyms": [
+                                    "ベンディングマシーン",
+                                    "自販機"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "駐車場",
+                                "synonyms": [
+                                    "車を止められる場所",
+                                    "車を止められる所",
+                                    "駐車スペース"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ランドリーサービス",
+                                "synonyms": [
+                                    "洗濯乾燥機",
+                                    "乾燥機",
+                                    "ランドリー",
+                                    "洗濯機"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "車椅子"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "PAYMENT_METHOD",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "領収書",
+                                "synonyms": [
+                                    "レシート",
+                                    "領収書",
+                                    "受領書",
+                                    "販売証明書",
+                                    "買い物明細書",
+                                    "販売レシート",
+                                    "領収証",
+                                    "購入証明書",
+                                    "購入レシート",
+                                    "買い物レシート",
+                                    "販売伝票",
+                                    "購入伝票",
+                                    "買い物伝票",
+                                    "支払い証明書",
+                                    "取引明細書",
+                                    "支払いレシート",
+                                    "決済証明書",
+                                    "決済レシート",
+                                    "取引証明書",
+                                    "購入明細書",
+                                    "支払い伝票"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "お米券"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "金券"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "株主優待"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "クーポン"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "クレジットカード",
+                                "synonyms": [
+                                    "信用カード",
+                                    "カード",
+                                    "クレカ",
+                                    "クレジット",
+                                    "支払いカード",
+                                    "プラスチックカード",
+                                    "VISA",
+                                    "MasterCard",
+                                    "金融カード",
+                                    "デビットカード",
+                                    "電子マネーカード",
+                                    "決済カード",
+                                    "電子決済カード",
+                                    "クレジット決済カード",
+                                    "リボルビングカード"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "現金"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ギフトカード"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "BOOKING_OPTION",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "当日予約",
+                                "synonyms": [
+                                    "当日",
+                                    "同日予約",
+                                    "今日の予約",
+                                    "当日の予約",
+                                    "本日予約",
+                                    "今日の日付での予約",
+                                    "本日の予約",
+                                    "同じ日の予約",
+                                    "即日予約",
+                                    "その日の予約",
+                                    "当日での予約",
+                                    "今日予約",
+                                    "当日予約制",
+                                    "即日の予約",
+                                    "現日予約",
+                                    "今日での予約",
+                                    "この日の予約",
+                                    "即日での予約",
+                                    "その日予約",
+                                    "本日での予約",
+                                    "今日予約制"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "キャンセル待ち",
+                                "synonyms": [
+                                    "キャンセル待機",
+                                    "予約キャンセル待ち",
+                                    "取り消し待ち",
+                                    "キャンセルの待ち行列",
+                                    "予約取り消し待ち",
+                                    "キャンセル待ちリスト",
+                                    "キャンセル予定待ち",
+                                    "キャンセル待ち行列",
+                                    "解約待ち",
+                                    "予約解除待ち",
+                                    "キャンセルの待機リスト",
+                                    "予約取消待ち",
+                                    "キャンセル予定の待ち行列",
+                                    "キャンセルの待ち状態",
+                                    "キャンセル予約待ち",
+                                    "待ち合わせのキャンセル",
+                                    "解約待機",
+                                    "キャンセル予定の待機",
+                                    "待ち行列のキャンセル",
+                                    "予約のキャンセル待ち"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "いつまで",
+                                "synonyms": [
+                                    "どれくらい先まで",
+                                    "どれ くらい 先 まで",
+                                    "どのくらい先まで",
+                                    "いつになったら",
+                                    "どの時点までに",
+                                    "何時までに",
+                                    "いつ頃まで",
+                                    "どの期限までに",
+                                    "いつが期限ですか",
+                                    "いつが終了時ですか",
+                                    "いつが締め切りですか",
+                                    "何日までに",
+                                    "いつが最終日ですか",
+                                    "いつが終わりですか",
+                                    "どの瞬間までに",
+                                    "いつまでが期限ですか",
+                                    "いつが終了日ですか",
+                                    "いつが終了期限ですか",
+                                    "いつまでが締め切りですか",
+                                    "何時が締め切りですか",
+                                    "何日が締め切りですか",
+                                    "どの日までに",
+                                    "いつまでが最終日ですか"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "キャンセル料",
+                                "synonyms": [
+                                    "キャンセルチャージ",
+                                    "キャンセル費用",
+                                    "キャンセルの料金",
+                                    "解約料",
+                                    "キャンセルチャージ",
+                                    "予約取消料",
+                                    "キャンセルの費用",
+                                    "キャンセルにかかる料金",
+                                    "予約キャンセル料",
+                                    "キャンセルに関する料金",
+                                    "予約解除料",
+                                    "キャンセル手数料",
+                                    "キャンセルに伴う料金",
+                                    "キャンセルに関わる費用",
+                                    "取り消し料",
+                                    "キャンセル負担料",
+                                    "キャンセルによる料金",
+                                    "予約取消費",
+                                    "予約キャンセルの料金",
+                                    "キャンセルのコスト",
+                                    "取り消しの料金"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "部屋・フロア指定",
+                                "synonyms": [
+                                    "客室のフロアや場所の指定",
+                                    "客室のフロアや場所など細かい指定",
+                                    "客室の階数や位置の選択",
+                                    "客室の位置やフロアの特定",
+                                    "客室の場所やフロアの決定",
+                                    "客室のフロアと場所の選定",
+                                    "客室のフロアや配置の決め",
+                                    "客室のフロアと位置の指示",
+                                    "客室のフロアや場所の選び",
+                                    "客室のフロアと位置の設定",
+                                    "客室の階数と場所の定義",
+                                    "客室の位置とフロアの確定",
+                                    "客室のフロアや位置の明示",
+                                    "客室の場所やフロアの確認",
+                                    "客室のフロアや場所の決め",
+                                    "客室の階数や位置の指定",
+                                    "客室のフロアと場所の特定",
+                                    "客室の位置やフロアの選定",
+                                    "客室のフロアと場所の定め",
+                                    "客室の位置や階数の指定",
+                                    "客室のフロアや位置の選択",
+                                    "客室の階数と場所の確定"
                                 ]
                             }
                         }
                     ]
                 },
                 {
-                    "name": "target_music",
+                    "name": "CHECK_IN_OUT",
                     "values": [
                         {
                             "name": {
-                                "value": "ラジオ体操",
+                                "value": "アーリーチェックインレイトチェックアウト",
                                 "synonyms": [
-                                    "ラジオ体操の音楽",
-                                    "ラジオ 体操"
+                                    "早めのチェックイン遅めのチェックアウト",
+                                    "遅めのチェックアウト",
+                                    "早めのチェックイン"
                                 ]
                             }
                         },
                         {
                             "name": {
-                                "value": "音楽"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "general_what",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "天気"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ニュース"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "何時"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "今の時間"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "日の出"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "時計"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "時"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "日没時刻"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "日没"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "target_facility",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "アラーム"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "テレビ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "電気"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ボリューム"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ラジオ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "リマインダー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "Bluetooth"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "画面"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "エアコン"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "タイマー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "プライムビデオ",
+                                "value": "チェックインチェックアウト時刻",
                                 "synonyms": [
-                                    "prime video",
-                                    "primevideo"
+                                    "チェックインチェックアウトの時間",
+                                    "チェックアウトの時間",
+                                    "チェックインの時間",
+                                    "チェックアウト時刻",
+                                    "チェックイン時刻"
                                 ]
                             }
                         },
                         {
                             "name": {
-                                "value": "温度"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "Netflix"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ネトフリ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "効果音"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ウェブ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "リマインド"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ディスプレイ",
+                                "value": "時間延長",
                                 "synonyms": [
-                                    "ディスプレー"
+                                    "チェックアウト時間後の延長",
+                                    "チェックアウト時間後の時間の延長",
+                                    "チェックアウト後に時間の延長",
+                                    "チェックアウト時間後に時間の延長",
+                                    "時間の延長",
+                                    "時間の伸ばし",
+                                    "時間を長くする",
+                                    "時間追加",
+                                    "追加時間",
+                                    "時間を伸ばす",
+                                    "時間の追加",
+                                    "時間の増加",
+                                    "時間の延ばし",
+                                    "延長時間",
+                                    "期間の延長",
+                                    "時間を延ばす",
+                                    "追加の時間",
+                                    "延長の時間",
+                                    "時間を追加する",
+                                    "時間の拡大",
+                                    "拡張時間",
+                                    "時間拡張",
+                                    "時間増加",
+                                    "長時間化",
+                                    "チェックアウト後の時間延長",
+                                    "チェックアウト後の時間追加",
+                                    "チェックアウト後に時間を延ばす",
+                                    "チェックアウト後の時間増加",
+                                    "退室後の時間延長",
+                                    "チェックアウト後に時間を伸ばす",
+                                    "退室後に時間を長くする",
+                                    "チェックアウト後の延長時間",
+                                    "チェックアウト後の追加時間",
+                                    "チェックアウト後の時間拡張",
+                                    "退室後の時間の延ばし",
+                                    "チェックアウト後の時間の増加",
+                                    "退室後の時間追加",
+                                    "チェックアウト後の時間を追加する",
+                                    "チェックアウト後に時間を追加する",
+                                    "チェックアウト後の時間の伸ばし",
+                                    "退室後に時間の延長",
+                                    "チェックアウト後の時間を長くする",
+                                    "チェックアウト後の時間の拡大",
+                                    "退室後に時間を延ばす"
                                 ]
                             }
                         },
                         {
                             "name": {
-                                "value": "youtube"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "what_type",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "最寄り"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "近く"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "place",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "スポット"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "レストラン"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "コンビニ"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "駅"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "スーパー"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "病院"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "place_type",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "最寄り"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "近く"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "近い"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "target",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "音楽"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "モーニングコール"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "ラジオ"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "action",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "交換"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "adv",
-                    "values": [
-                        {
-                            "name": {
-                                "value": "のみ",
+                                "value": "遅刻",
                                 "synonyms": [
-                                    "だけ"
+                                    "チェックイン時刻に遅れる場合",
+                                    "チェックインに遅刻する場合",
+                                    "遅刻する場合",
+                                    "チェックインが遅れる場合",
+                                    "チェックインが遅くなる場合",
+                                    "チェックイン時に遅れる場合",
+                                    "チェックイン時間に間に合わない場合",
+                                    "チェックイン時間を逸する場合",
+                                    "チェックインに遅れる場合",
+                                    "チェックインが予定より遅くなる場合",
+                                    "チェックインが遅くなる可能性がある場合",
+                                    "予定のチェックイン時間に遅れる場合",
+                                    "チェックインの時間に遅刻する場合",
+                                    "チェックインの時間に遅れる場合",
+                                    "チェックイン時間が遅くなる場合",
+                                    "チェックインに遅くなる可能性がある場合",
+                                    "チェックイン時に遅刻する場合",
+                                    "チェックイン時間に遅れる可能性がある場合",
+                                    "チェックインが遅刻する可能性がある場合",
+                                    "チェックインに遅くなる場合",
+                                    "予定のチェックイン時間を逸する場合",
+                                    "チェックインが遅くなる予定の場合",
+                                    "チェックイン時間に間に合わない可能性がある場合"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "チェックアウト後",
+                                "synonyms": [
+                                    "チェックアウトの後",
+                                    "チェックアウト後",
+                                    "退室後",
+                                    "チェックアウトを終えた後",
+                                    "チェックアウト完了後",
+                                    "チェックアウトを経た後",
+                                    "部屋を出た後",
+                                    "チェックアウトからの後",
+                                    "チェックアウトを済ませた後",
+                                    "退室した後",
+                                    "退室済みの後",
+                                    "チェックアウト後の時間",
+                                    "チェックアウト終了後",
+                                    "部屋を出る後",
+                                    "チェックアウト次第",
+                                    "退室を経た後",
+                                    "退室を済ませた後",
+                                    "部屋を出てから",
+                                    "退室を終えた後",
+                                    "チェックアウト済みの後",
+                                    "退室からの後"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "チェックアウト前",
+                                "synonyms": [
+                                    "チェックアウトの前",
+                                    "チェックアウト前",
+                                    "退室前",
+                                    "チェックアウトをする前",
+                                    "部屋を出る前",
+                                    "チェックアウトする前",
+                                    "チェックアウトになる前",
+                                    "チェックアウト直前",
+                                    "チェックアウトの直前",
+                                    "退室をする前",
+                                    "チェックアウト予定時間前",
+                                    "部屋を出る予定時間前",
+                                    "退室する前",
+                                    "チェックアウト前の時間",
+                                    "退室予定時間前",
+                                    "チェックアウト予定の前",
+                                    "チェックアウト時間前",
+                                    "退室する直前",
+                                    "チェックアウトを控える前",
+                                    "チェックアウト直前の時間",
+                                    "チェックアウトが始まる前"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "チェックイン後",
+                                "synonyms": [
+                                    "チェックインの後",
+                                    "チェックイン後",
+                                    "入室後",
+                                    "チェックインを終えた後",
+                                    "チェックイン完了後",
+                                    "部屋に入った後",
+                                    "チェックインからの後",
+                                    "チェックインを済ませた後",
+                                    "部屋に入る後",
+                                    "チェックインした後",
+                                    "入室した後",
+                                    "チェックイン後の時間",
+                                    "チェックイン終了後",
+                                    "入室を経た後",
+                                    "入室を済ませた後",
+                                    "部屋に入る直後",
+                                    "チェックイン済みの後",
+                                    "部屋への入室後",
+                                    "チェックインを経た後",
+                                    "チェックイン直後",
+                                    "チェックインから数分後"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "チェックイン前",
+                                "synonyms": [
+                                    "チェックインの前",
+                                    "チェックイン前",
+                                    "入室前",
+                                    "チェックインをする前",
+                                    "部屋に入る前",
+                                    "チェックインする前",
+                                    "チェックインになる前",
+                                    "チェックイン直前",
+                                    "チェックインの直前",
+                                    "入室をする前",
+                                    "チェックイン予定時間前",
+                                    "部屋に入る予定時間前",
+                                    "入室する前",
+                                    "チェックイン前の時間",
+                                    "入室予定時間前",
+                                    "チェックイン予定の前",
+                                    "チェックイン時間前",
+                                    "入室する直前",
+                                    "チェックインを控える前",
+                                    "チェックイン直前の時間",
+                                    "チェックインが始まる前"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "チェックアウト",
+                                "synonyms": [
+                                    "退室",
+                                    "チェックアウトの手続き",
+                                    "退室の手続き",
+                                    "チェックアウト時間",
+                                    "部屋を出る",
+                                    "退室時間",
+                                    "ホテルを出る",
+                                    "宿泊施設を出る",
+                                    "チェックアウトする",
+                                    "部屋を離れる",
+                                    "部屋から出る",
+                                    "チェックアウトの時刻",
+                                    "ホテルから出る",
+                                    "部屋を後にする",
+                                    "宿泊を終える",
+                                    "チェックアウトプロセス",
+                                    "ホテルの退室",
+                                    "ホテルのチェックアウト",
+                                    "チェックアウトの時",
+                                    "滞在を終える"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "チェックイン",
+                                "synonyms": [
+                                    "入室",
+                                    "チェックインの手続き",
+                                    "入室の手続き",
+                                    "チェックイン時間",
+                                    "部屋に入る",
+                                    "入室時間",
+                                    "ホテルに入る",
+                                    "宿泊施設に入る",
+                                    "チェックインする",
+                                    "部屋に到着する",
+                                    "部屋への入室",
+                                    "チェックインの時刻",
+                                    "ホテルへの入室",
+                                    "部屋に滞在開始する",
+                                    "宿泊を開始する",
+                                    "チェックインプロセス",
+                                    "ホテルの入室",
+                                    "ホテルのチェックイン",
+                                    "チェックインの時",
+                                    "滞在を始める"
                                 ]
                             }
                         }
                     ]
                 },
                 {
-                    "name": "alexa_feature_faq",
+                    "name": "MEAL",
                     "values": [
                         {
                             "name": {
-                                "value": "Q&A",
+                                "value": "部屋食",
                                 "synonyms": [
-                                    "Q アンド A",
-                                    "キューアンドエー"
+                                    "客室で食事",
+                                    "部屋で食事"
                                 ]
                             }
                         },
                         {
                             "name": {
-                                "value": "よくある質問"
+                                "value": "昼食",
+                                "synonyms": [
+                                    "ランチ"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "夕食",
+                                "synonyms": [
+                                    "夕飯",
+                                    "ディナー"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "朝食",
+                                "synonyms": [
+                                    "朝ごはん",
+                                    "モーニング"
+                                ]
                             }
                         }
                     ]
@@ -3109,78 +1303,28 @@
             "intents": [
                 {
                     "name": "register_device",
-                    "delegationStrategy": "SKILL_RESPONSE",
                     "confirmationRequired": false,
                     "prompts": {},
                     "slots": [
                         {
                             "name": "hotel_id",
                             "type": "AMAZON.NUMBER",
-                            "confirmationRequired": false,
+                            "confirmationRequired": true,
                             "elicitationRequired": true,
                             "prompts": {
-                                "elicitation": "Elicit.Slot.827559777553.973915512110"
-                            },
-                            "validations": [
-                                {
-                                    "type": "isGreaterThan",
-                                    "prompt": "Slot.Validation.827559777553.973915512110.1556710887422",
-                                    "value": "0"
-                                }
-                            ]
+                                "confirmation": "Confirm.Slot.381817101653.928022179996",
+                                "elicitation": "Elicit.Slot.381817101653.928022179996"
+                            }
                         },
                         {
                             "name": "room_number",
                             "type": "AMAZON.NUMBER",
-                            "confirmationRequired": false,
+                            "confirmationRequired": true,
                             "elicitationRequired": true,
                             "prompts": {
-                                "elicitation": "Elicit.Slot.827559777553.863540983644"
-                            },
-                            "validations": [
-                                {
-                                    "type": "isGreaterThan",
-                                    "prompt": "Slot.Validation.827559777553.863540983644.699320478057",
-                                    "value": "0"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "order",
-                    "delegationStrategy": "SKILL_RESPONSE",
-                    "confirmationRequired": false,
-                    "prompts": {},
-                    "slots": [
-                        {
-                            "name": "orderable_item",
-                            "type": "orderable_item",
-                            "confirmationRequired": false,
-                            "elicitationRequired": false,
-                            "prompts": {}
-                        }
-                    ]
-                },
-                {
-                    "name": "number_only",
-                    "delegationStrategy": "SKILL_RESPONSE",
-                    "confirmationRequired": false,
-                    "prompts": {},
-                    "slots": [
-                        {
-                            "name": "number_value",
-                            "type": "AMAZON.NUMBER",
-                            "confirmationRequired": false,
-                            "elicitationRequired": false,
-                            "prompts": {},
-                            "validations": [
-                                {
-                                    "type": "isGreaterThan",
-                                    "prompt": "Slot.Validation.36884923100.1117992179628.1509933494372",
-                                    "value": "0"
-                                }
-                            ]
+                                "confirmation": "Confirm.Slot.381817101653.1111527331096",
+                                "elicitation": "Elicit.Slot.381817101653.1111527331096"
+                            }
                         }
                     ]
                 }
@@ -3189,73 +1333,38 @@
         },
         "prompts": [
             {
-                "id": "Elicit.Slot.827559777553.973915512110",
+                "id": "Elicit.Slot.381817101653.928022179996",
                 "variations": [
                     {
                         "type": "PlainText",
-                        "value": "ホテルIDを教えてください。"
+                        "value": "ホテルIDを教えてください"
                     }
                 ]
             },
             {
-                "id": "Elicit.Slot.827559777553.863540983644",
+                "id": "Elicit.Slot.381817101653.1111527331096",
                 "variations": [
                     {
                         "type": "PlainText",
-                        "value": "あなたの部屋番号は何ですか？"
+                        "value": "部屋の番号を教えてください"
                     }
                 ]
             },
             {
-                "id": "Slot.Validation.827559777553.973915512110.1556710887422",
+                "id": "Confirm.Slot.381817101653.1111527331096",
                 "variations": [
                     {
                         "type": "PlainText",
-                        "value": "番号を教えてください。"
-                    },
-                    {
-                        "type": "PlainText",
-                        "value": "ホテルIDを教えていただけますか？"
+                        "value": "{room_number} でよろしいですか？"
                     }
                 ]
             },
             {
-                "id": "Slot.Validation.827559777553.863540983644.699320478057",
+                "id": "Confirm.Slot.381817101653.928022179996",
                 "variations": [
                     {
                         "type": "PlainText",
-                        "value": "部屋の番号を教えてください。"
-                    },
-                    {
-                        "type": "PlainText",
-                        "value": "部屋番号を教えてください。"
-                    }
-                ]
-            },
-            {
-                "id": "Elicit.Slot.300802004794.439392524676",
-                "variations": [
-                    {
-                        "type": "PlainText",
-                        "value": "なんでしょう？"
-                    }
-                ]
-            },
-            {
-                "id": "Slot.Validation.36884923100.1117992179628.1509933494372",
-                "variations": [
-                    {
-                        "type": "PlainText",
-                        "value": "ゼロより大きい数を言ってください"
-                    }
-                ]
-            },
-            {
-                "id": "Slot.Validation.589594166767.191569682090.1423439002556",
-                "variations": [
-                    {
-                        "type": "PlainText",
-                        "value": "Please say the size name"
+                        "value": "{hotel_id} でよろしいですか？"
                     }
                 ]
             }
