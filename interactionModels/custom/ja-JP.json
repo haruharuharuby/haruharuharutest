@@ -454,7 +454,7 @@
                         }
                     ],
                     "samples": [
-                        "{meal}できますか ",
+                        "{meal} できますか ",
                         "{meal} の時間を教えてください ",
                         "{meal} の時間は何時ですか",
                         "{meal} は何時からですか",
@@ -523,6 +523,37 @@
                     "slots": [],
                     "samples": [
                         "門限はありますか"
+                    ]
+                },
+                {
+                    "name": "turn_on_off_air_conditioner",
+                    "slots": [
+                        {
+                            "name": "turn_on_off_operation",
+                            "type": "TURN_ON_OR_OFF"
+                        }
+                    ],
+                    "samples": [
+                        "冷房を {turn_on_off_operation}",
+                        "エアコンを {turn_on_off_operation}"
+                    ]
+                },
+                {
+                    "name": "turn_on_off_light",
+                    "slots": [
+                        {
+                            "name": "turn_on_off_operation",
+                            "type": "TURN_ON_OR_OFF"
+                        },
+                        {
+                            "name": "device_placed_at",
+                            "type": "DEVICE_PLACED_AT"
+                        }
+                    ],
+                    "samples": [
+                        "{device_placed_at} の電灯を {turn_on_off_operation}",
+                        "{device_placed_at} の照明を {turn_on_off_operation} ",
+                        "{device_placed_at} のライトを {turn_on_off_operation}"
                     ]
                 }
             ],
@@ -1292,6 +1323,105 @@
                                 "synonyms": [
                                     "朝ごはん",
                                     "モーニング"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "TURN_ON_OR_OFF",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "消して",
+                                "synonyms": [
+                                    "オフにして",
+                                    "電源を切って",
+                                    "止めて",
+                                    "停止して",
+                                    "スイッチを切って",
+                                    "電源を落として",
+                                    "電源を断って",
+                                    "停電して",
+                                    "電源をオフにして",
+                                    "スイッチをオフにして",
+                                    "操作を終了して",
+                                    "機能を停止して",
+                                    "作動を止めて",
+                                    "運転を停止して",
+                                    "稼働を止めて",
+                                    "運転をオフにして",
+                                    "電源を中断して",
+                                    "機能を終了して",
+                                    "電源を停止して",
+                                    "スイッチを中断して"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "つけて",
+                                "synonyms": [
+                                    "オンにして",
+                                    "電源を入れて",
+                                    "起動して",
+                                    "稼働させて",
+                                    "スイッチを入れて",
+                                    "電源をオンにして",
+                                    "作動させて",
+                                    "運転を始めて",
+                                    "運転して",
+                                    "作動を開始して",
+                                    "電源を起動して",
+                                    "稼働を開始して",
+                                    "機能を開始して",
+                                    "スイッチをオンにして",
+                                    "電源を接続して",
+                                    "動かして",
+                                    "稼働して",
+                                    "開始して",
+                                    "機能をオンにして",
+                                    "作動して"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "DEVICE_PLACED_AT",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "浴室",
+                                "synonyms": [
+                                    "シャワー",
+                                    "シャワー室",
+                                    "風呂",
+                                    "お風呂"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "リビング",
+                                "synonyms": [
+                                    "部屋"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ベッド",
+                                "synonyms": [
+                                    "布団"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "洗面台",
+                                "synonyms": [
+                                    "洗面所"
                                 ]
                             }
                         }
