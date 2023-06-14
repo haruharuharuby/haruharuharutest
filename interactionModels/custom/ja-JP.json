@@ -589,36 +589,17 @@
                     ]
                 },
                 {
-                    "name": "turn_on_off_air_conditioner",
+                    "name": "turn_on_off_air_con",
                     "slots": [
                         {
-                            "name": "turn_on_off_operation",
+                            "name": "operation",
                             "type": "TURN_ON_OR_OFF"
                         }
                     ],
                     "samples": [
-                        "冷房を {turn_on_off_operation}",
-                        "エアコンを {turn_on_off_operation}",
-                        "冷房装置を {turn_on_off_operation}",
-                        "クーラーを {turn_on_off_operation}",
-                        "エアコンを {turn_on_off_operation}",
-                        "冷房機を {turn_on_off_operation}",
-                        "冷却装置を {turn_on_off_operation}",
-                        "冷房器具を {turn_on_off_operation}",
-                        "冷房装置の {turn_on_off_operation}",
-                        "冷房システムを {turn_on_off_operation}",
-                        "冷房設備を {turn_on_off_operation}",
-                        "冷却機を {turn_on_off_operation}",
-                        "クーリングシステムを {turn_on_off_operation}",
-                        "エアコンを {turn_on_off_operation} する",
-                        "冷房装置を {turn_on_off_operation} する",
-                        "クーラーを {turn_on_off_operation} する",
-                        "エアコンを {turn_on_off_operation} する",
-                        "冷房機を {turn_on_off_operation} する",
-                        "冷却装置を {turn_on_off_operation} する",
-                        "冷房器具を {turn_on_off_operation} する",
-                        "冷房装置の {turn_on_off_operation} する",
-                        "冷房システムを {turn_on_off_operation} する"
+                        "空調を {operation}",
+                        "冷房を {operation}",
+                        "エアコンを {operation}"
                     ]
                 },
                 {
@@ -656,6 +637,29 @@
                         "{device_placed_at} 照らし出し器具 {turn_on_off_operation}",
                         "{device_placed_at} 光明装置 {turn_on_off_operation}",
                         "{device_placed_at} 光明照明 {turn_on_off_operation}"
+                    ]
+                },
+                {
+                    "name": "order",
+                    "slots": [
+                        {
+                            "name": "orderable_item",
+                            "type": "orderable_item"
+                        }
+                    ],
+                    "samples": [
+                        "{orderable_item} を貸してください",
+                        "オーダーリスト",
+                        "注文の一覧を見せて",
+                        "注文のリストを見せて",
+                        "注文を確認",
+                        "何を注文したのか確認",
+                        "{orderable_item} が欲しい",
+                        "{orderable_item} をください",
+                        "{orderable_item} ちょうだい",
+                        "{orderable_item} を頼みたいのですが",
+                        "{orderable_item} が飲みたいです",
+                        "{orderable_item} が飲みたい"
                     ]
                 }
             ],
@@ -1745,6 +1749,1236 @@
                                     "洗面所エリア",
                                     "洗面台",
                                     "洗面所スペース"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "orderable_item",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "クリーニングサービス"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ランドリー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ランドリーサービス"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "クリーニング"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "髭剃り",
+                                "synonyms": [
+                                    "ひげそり"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ハーブティー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "スリッパ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "タオル3点セット",
+                                "synonyms": [
+                                    "タオル三点セット"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "タオルセット"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ほうじ茶"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "紅茶"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "パイプ枕"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "裁縫セット"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "リフレッシュハーブティー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "サザンタワーブレンド"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ティーバッグ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "コップ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "バスルームグラス"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ロックグラス"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "リビンググラス"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "大きいスプーン"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "デザートスプーン"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "作務衣"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "剃刀"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ヘアーリキッド"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "整髪料"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "そば殻枕",
+                                "synonyms": [
+                                    "そば枕"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "子供用スリッパ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "オードブルナイフ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "フォーク"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ワイングラス"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "シャンパングラス"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "携帯充電器",
+                                "synonyms": [
+                                    "充電器"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "毛布",
+                                "synonyms": [
+                                    "ブランケット"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ゆかた"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "コットン枕"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "アダプター"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "割り箸",
+                                "synonyms": [
+                                    "箸"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "子供用ゆかた"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "バゲージラック"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ボトルウォーター",
+                                "synonyms": [
+                                    "ミネラルウォーター"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "パイルスリッパ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "シャワーキャップ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ハブラシ",
+                                "synonyms": [
+                                    "歯ブラシ"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "コットンセット"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ヘアーブラシ",
+                                "synonyms": [
+                                    "ブラシ"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ランドリーバッグ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ランドリー用紙",
+                                "synonyms": [
+                                    "ランドリースリップ"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "シューシャインペーパー",
+                                "synonyms": [
+                                    "シューシャイン"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "景観図",
+                                "synonyms": [
+                                    "ビュー"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "マグカップ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "レザー",
+                                "synonyms": [
+                                    "剃刀"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ボディースクラブ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ティッシュ",
+                                "synonyms": [
+                                    "ティッシュペーパー"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "トイレットペーパー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "緑茶パック"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ナイトシャツ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "枕",
+                                "synonyms": [
+                                    "ピロー"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ハンガー",
+                                "synonyms": [
+                                    "追加のハンガー"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "皿",
+                                "synonyms": [
+                                    "さら"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "便箋"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "封筒",
+                                "synonyms": [
+                                    "エンベロップ"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "綿棒"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "電気スタンド"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "アイロンとボード",
+                                "synonyms": [
+                                    "ボード",
+                                    "アイロン＆ボード",
+                                    "アイロン",
+                                    "アイロンボード"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ズボンプレッサー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "体重計",
+                                "synonyms": [
+                                    "ヘルスメーター"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ベッドガード"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ワインクーラー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "延長コード"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ワインオープナー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "栓抜き"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ソーイングセット"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "固形石鹸",
+                                "synonyms": [
+                                    "石鹸"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "つめきり"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "はさみ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "体温計"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "シャンプー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "コンディショナー",
+                                "synonyms": [
+                                    "リンス"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ボディーシャンプー",
+                                "synonyms": [
+                                    "ボディーソープ"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ハンドソープ",
+                                "synonyms": [
+                                    "フェイスソープ"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "メモパット",
+                                "synonyms": [
+                                    "メモ用紙"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ゲストコメント"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ボールペン",
+                                "synonyms": [
+                                    "ペン"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "リセッシュ",
+                                "synonyms": [
+                                    "消臭剤"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "バスマット"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ブルーレイプレイヤー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "タオル一式",
+                                "synonyms": [
+                                    "タオル1セット",
+                                    "タオルセット"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "タオル"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ビール"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ハイボール",
+                                "synonyms": [
+                                    "サントリーハイボール"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "伊右衛門",
+                                "synonyms": [
+                                    "いえもん"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "コカコーラ",
+                                "synonyms": [
+                                    "コーラ"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "プリングルス"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ナッツとクラッカー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "c タイプアダプター",
+                                "synonyms": [
+                                    "c タイプアダプター",
+                                    "c タイプ アダプター"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "o タイプアダプター",
+                                "synonyms": [
+                                    "o タイプアダプター",
+                                    "o タイプ アダプター"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "3ピンアダプター",
+                                "synonyms": [
+                                    "3ピン アダプター"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "2ピンアダプター",
+                                "synonyms": [
+                                    "2ピン アダプター"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "バスタオル"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "フェイスタオル"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ハンドタオル"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ナッツ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "クラッカー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "日本茶パック"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "お茶パック"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "デザートナイフ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ナイフ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "硬い枕"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "羽毛ではない枕"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "水"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "化粧用コットン"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ボディータオル"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ナイトウェアー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "パジャマ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "クリップつきハンガー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "陶器"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "シャンパンクーラー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "オープナー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "針と糸"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "縫い針"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DVDデッキ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "サントリープレミアムモルツ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "プレミアムモルツ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "体を洗うタオル"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "アンケート"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "コメントカード"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "洗面コップ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "羽毛枕"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "スマートフォン充電器"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "アイフォン充電器"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "アンドロイド充電器"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "カップ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ティーカップ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "空気清浄機"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DVDプレイヤー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ベビーシャンプー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ベビー全身ソープ",
+                                "synonyms": [
+                                    "ベビーソープ"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ベビーバス"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ベビーベッド"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "メイク落とし"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "クレンジング"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "洗顔"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ウォッシュモイスチャー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "化粧水"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "モイスチャーローション"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "乳液"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "モイスチャーミルク"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "スプーン"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ティースプーン"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "小さいスプーン"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "グラス"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "タンブラー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "プラグ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "マルチプラグ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ヘヤーリキット"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ヘヤートニック"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "男性用化粧品"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "緑茶"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "日本茶"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "お茶"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "コーヒー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "砂糖"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ミルク"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "加湿器"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ガムテープ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "シュガー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "テープ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "おねしょシーツ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "防水シーツ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "かさ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "アイス枕"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "氷枕"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "熱さまシート"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ひえぴた"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "子供用ひえぴた"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "アイスペール"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "氷入れ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ハンディスチーマー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "スチーマー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "スチームアイロン"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ヘアアイロン"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "生理用品"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ハイブリッドヘッドフォン"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "スイッチ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tv ゲーム",
+                                "synonyms": [
+                                    "t vゲーム",
+                                    "t v ゲーム"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tv ゲームソフト",
+                                "synonyms": [
+                                    "t vゲームソフト",
+                                    "t v ゲームソフト"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ｽｰﾊﾟｰﾏﾘｵﾊﾟｰﾃｨ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vr ゴーグル",
+                                "synonyms": [
+                                    "VR ゴーグル",
+                                    "v rゴーグル",
+                                    "v r ゴーグル"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vr 用保護シート",
+                                "synonyms": [
+                                    "VR 用保護シート",
+                                    "v r用保護シート",
+                                    "v r 用保護シート"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "黒ひげ危機一髪"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ジェンガ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ウノ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ミニオンズ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ポケットモンスター"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ポケモン"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "マグネットリバーシ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "オセロ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "おもちゃセット"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "トランプ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ベビー用布団一式"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "子供用補助便座"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "子供用便座"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "補助便座スタンド"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "便座スタンド"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ベビーチェア"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "子供用椅子"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "子供用踏台"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "洗顔用泡立てネット"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "シューシャインクロス"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "靴磨き"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "お子さま用スポンジ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "子供用スポンジ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "お子さま用歯ブラシ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "子供用歯ブラシ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "カールサンジュウニミリ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "カールサンジュウニミリストレート"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "知恵の輪",
+                                "synonyms": [
+                                    "チエノワ"
                                 ]
                             }
                         }
